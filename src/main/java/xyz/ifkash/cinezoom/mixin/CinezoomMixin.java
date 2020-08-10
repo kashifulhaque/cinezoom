@@ -16,7 +16,7 @@ public class CinezoomMixin {
     private void init(CallbackInfo info) { System.out.println("CinezoomMixin: initialized."); }
 
     @Inject(method = "getFov(Lnet/minecraft/client/render/Camera;FZ)D", at = @At("HEAD"), cancellable = true)
-    public void getLevel(CallbackInfoReturnable<Float> info) {
+    public void getLevel(CallbackInfoReturnable<Double> info) {
         if(Cinezoom.isKeyPressed()) info.setReturnValue(Cinezoom.getLevel());
         Cinezoom.manageSmoothCam();
     }

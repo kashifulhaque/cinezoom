@@ -24,7 +24,7 @@ public class Cinezoom implements ClientModInitializer {
     // Member variables
     private static final String translationKey = "key.cinezoom.zoom";
     private static final String category = "category.cinezoom.zoom";
-    private static final float zoomLevel = 20.0f;   // Optifine uses FOV 19 for it's zoom level
+    private static final double zoomLevel = 20.0f;   // Optifine uses FOV 19 for it's zoom level
 
     @Override
     public void onInitializeClient() {
@@ -66,5 +66,5 @@ public class Cinezoom implements ClientModInitializer {
 
     private static void stopZoom() { isZoom = false; }
 
-    public static float getLevel() { return zoomLevel; }
+    public static double getLevel() { return zoomLevel; }
 }
