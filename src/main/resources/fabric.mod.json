@@ -14,16 +14,19 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/cinezoom/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
-    "main": [
+    "client": [
       "xyz.ifkash.cinezoom.Cinezoom"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    {
+      "config": "cinezoom.mixins.json",
+      "environment": "client"
+    }
   ],
 
   "depends": {
