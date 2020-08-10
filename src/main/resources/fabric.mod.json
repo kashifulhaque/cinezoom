@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "cinezoom",
+  "version": "0.0.1",
+
+  "name": "cinez00m!",
+  "description": "Optifine like cinematic zoom, for Fabric",
+  "authors": [
+    "enderBoi25 <https://ifkash.xyz>"
+  ],
+  "contact": {
+    "homepage": "https://ifkash.xyz/",
+    "sources": "https://github.com/kashifulhaque/cinezoom"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.ifkash.cinezoom.Cinezoom"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

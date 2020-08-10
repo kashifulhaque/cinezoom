@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.ifkash.cinezoom.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "CinezoomMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
